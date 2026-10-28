@@ -104,9 +104,6 @@ An optional paid add-on (US$14.99 once, including updates) that funds developmen
 
 Found a security problem? See [SECURITY.md](SECURITY.md).
 
-## How this was made
-
-This project was written with substantial help from an AI assistant (Claude by Anthropic). It's designed, tested on real servers and maintained by coldskiess. Bug reports are very welcome in [Issues](https://github.com/coldskiess/craftlehem-panel/issues).
 
 ## Licence
 
