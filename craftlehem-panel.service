@@ -1,0 +1,20 @@
+# Installed by install.sh - edit User and paths if you set it up by hand.
+[Unit]
+Description=Craftlehem Panel (Minecraft server control panel)
+After=network-online.target
+Wants=network-online.target
+
+[Service]
+Type=simple
+User=__USER__
+WorkingDirectory=__DIR__
+ExecStart=__DIR__/venv/bin/python run.py
+Restart=always
+RestartSec=5
+Environment=PYTHONUNBUFFERED=1
+# The Minecraft server runs in its own tmux session. KillMode=process means
+# restarting or updating the panel never takes the game server down with it.
+KillMode=process
+
+[Install]
+WantedBy=multi-user.target
